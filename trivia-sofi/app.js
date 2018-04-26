@@ -2,6 +2,11 @@
 var userName = prompt("¡Hola! Por favor, ingresa tu nombre")
 document.getElementById("user").textContent = "Bienvenid@, " + userName;
 
+if(userName.length == 0)
+{
+  userName = 'Usuario';
+}
+
 if (confirm(userName + ", estás list@ para jugar?")) {
 
 } else {
