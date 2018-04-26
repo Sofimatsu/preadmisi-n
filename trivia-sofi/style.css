@@ -1,0 +1,93 @@
+body {
+  background: #fbf3d9;
+}
+
+.box {
+  width: 80%;
+  height: 1100px;
+  background-color: #ffffff;
+  color: #060606;
+  padding: 50px;
+  border: 3px dashed #f9b212;
+  font-family: sans-serif;
+  margin: 0 auto 0 auto;
+}
+
+.answer {
+  font-size: 12px;
+  background: #ffffff;
+  padding: 8px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#user {
+  width: 30%;
+  float: right;
+  font-size: 20px;
+  background-color: #f7a430;
+  padding: 20px;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid orange;
+}
+
+#cancel {
+  font-size: 50px;
+  color: #000;
+  text-align: center;
+  margin-top: 200px;
+}
+/*caja de la trivia*/
+
+#quiz {
+  margin-left: 10px;
+  background: #fbd534;
+  padding: 10px 20px 10px 20px;
+  width: 40%;
+  border-radius: 20px;
+  float: left;
+  margin-top: 50px;
+}
+
+input {
+  margin-bottom: 20px;
+}
+
+#button {
+  background: orange;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  transition-duration: .5s;
+  margin-top: 5px;
+}
+/*Transicion de botón*/
+#button:hover {
+  background: white;
+  border: 1px solid orange;
+  color: orange;
+  cursor: pointer;
+}
+/*caja para resultados*/
+
+#after_submit {
+  visibility: hidden;
+  background: #f9cd44;
+  padding: 10px 20px 10px 20px;
+  width: 40%;
+  border-radius: 20px;
+  float: left;
+  margin-left: 20px;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+img#pictures {
+  width: 375px;
+  height: 245px;
+}
