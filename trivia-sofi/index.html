@@ -1,87 +1,89 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang='en' dir='ltr'>
 
 <head>
-  <meta charset="utf-8">
+  <meta charset='utf-8'>
   <title></title>
-  <link rel="stylesheet" href="style.css">
+  <link rel='stylesheet' href='style.css'>
 </head>
 
 <body>
 
-  <div class="box">
+  <div class='box'>
 
-    <div id="user">
+    <div id='user'>
     </div>
 
-    <img src="http://mqm.pe/wp-content/uploads/2017/10/Laboratoria-codigo.png" width="250" />
+    <img src='http://mqm.pe/wp-content/uploads/2017/10/Laboratoria-codigo.png' width='250' />
     <h1>¿Cuánto sabes sobre Laboratoria? Descúbrelo aquí :)</h1>
 <!--Preguntas-->
-    <form id="quiz" name="quiz">
+    <form id='quiz' name='quiz'>
 
-      <div id="question1Checked">
+      <div id='question1Checked'>
         <p>¿En cuántos países está Laboratoria?</p>
-        <input type="radio" class="label" name="question1" value="4"> 4<br>
-        <input type="radio" class="label" name="question1" value="7"> 7<br>
-        <input type="radio" class="label" name="question1" value="5"> 5<br>
+        <input type='radio' name='question1' value='4'> 4<br>
+        <input type='radio' name='question1' value='7'> 7<br>
+        <input type='radio' name='question1' value='5'> 5<br>
 
       </div>
 
-      <div id="question2Checked">
+      <div id='question2Checked'>
         <p>¿Cuál es la edad mínima para ingresar a Laboratoria?</p>
-        <input type="radio" class="label" name="question2" value="25 años"> 25 años<br>
-        <input type="radio" class="label" name="question2" value="18 años"> 18 años<br>
-        <input type="radio" class="label" name="question2" value="30 años"> 30 años<br>
+        <input type='radio' name='question2' value='25 años'> 25 años<br>
+        <input type='radio' name='question2' value='18 años'> 18 años<br>
+        <input type='radio' name='question2' value='30 años'> 30 años<br>
 
       </div>
-      <div id="question3Checked">
+      <div id='question3Checked'>
         <p>¿Cuántos meses dura el bootcamp?</p>
-        <input type="radio" class="label" name="question3" value="9"> 9<br>
-        <input type="radio" class="label" name="question3" value="12"> 12<br>
-        <input type="radio" class="label" name="question3" value="6"> 6<br>
+        <input type='radio' name='question3' value='9'> 9<br>
+        <input type='radio' name='question3' value='12'> 12<br>
+        <input type='radio' name='question3' value='6'> 6<br>
 
       </div>
-      <div id="question4Checked">
+      <div id='question4Checked'>
         <p>¿Qué lenguaje de programación aprenderás en el bootcamp?</p>
-        <input type="radio" class="label" name="question4" value="Javascript"> Javascript<br>
-        <input type="radio" class="label" name="question4" value="PHP"> PHP<br>
-        <input type="radio" class="label" name="question4" value="Python"> Python<br>
+        <input type='radio' name='question4' value='Javascript'> Javascript<br>
+        <input type='radio' name='question4' value='PHP'> PHP<br>
+        <input type='radio' name='question4' value='Python'> Python<br>
 
       </div>
 
-      <div id="question5Checked">
+      <div id='question5Checked'>
         <p>¿Cuál es el slogan de Laboratoria?</p>
-        <input type="radio" class="label" name="question5" value="Transforma tu código"> Transforma tu código<br>
-        <input type="radio" class="label" name="question5" value="Código que transforma"> Código que transforma<br>
-        <input type="radio" class="label" name="question5" value="¡No lleguen tarde!"> ¡No lleguen tarde!<br>
+        <input type='radio' name='question5' value='Transforma tu código'> Transforma tu código<br>
+        <input type='radio' name='question5' value='Código que transforma'> Código que transforma<br>
+        <input type='radio' name='question5' value='¡No lleguen tarde!'> ¡No lleguen tarde!<br>
 
       </div>
-      <input id="button" type="button" value="¡Terminé!" onclick="check()">
+      <input id='button' type='button' value='¡Terminé!' onclick='check()'>
 
     </form>
 
 
 <!--Respuestas correctas -->
-    <div id="after_submit">
+    <div id='after_submit'>
       Estas son las respuestas correctas:
-      <p class="answer">-¿En cuántos países está Laboratoria? 4 </p>
-      <p class="answer">-¿Cuál es la edad mínima para ingresar a Laboratoria? 18 años</p>
-      <p class="answer">-¿Cuántos meses dura el bootcamp? 6 meses </p>
-      <p class="answer">-¿Qué lenguaje de programación aprenderás en el bootcamp? Javascript </p>
-      <p class="answer">-¿Cuál es el slogan de Laboratoria? Código que transforma </p>
+      <p class='answer'>-¿En cuántos países está Laboratoria? 4 </p>
+      <p class='answer'>-¿Cuál es la edad mínima para ingresar a Laboratoria? 18 años</p>
+      <p class='answer'>-¿Cuántos meses dura el bootcamp? 6 meses </p>
+      <p class='answer'>-¿Qué lenguaje de programación aprenderás en el bootcamp? Javascript </p>
+      <p class='answer'>-¿Cuál es el slogan de Laboratoria? Código que transforma </p>
 <!--id para mensaje de submit-->
-      <p id="messages"></p>
-      <p id="number_correct"></p>
-      <img id="pictures">
+      <p id='messages'></p>
+      <p id='number_correct'></p>
+      <img id='pictures'>
+
+      <input id= 'button' type='button' value='¡Empezar de nuevo!' onclick='location.reload()'
 
     </div>
     </p>
-    <div id="cancel">
+    <div id='cancel'>
     </div>
 
   </div>
   <!--JS-->
-  <script src="app.js" charset="utf-8"></script>
+  <script src='app.js' charset='utf-8'></script>
 
 </body>
 
